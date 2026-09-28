@@ -1,0 +1,29 @@
+body{
+
+    background-color: rgb(121, 57, 121);
+    color:aliceblue;
+    font-family: 'segoe UI', Times New Roman, sans-serif;
+    line-height: 1.6;
+}
+header{
+    background-color: rgb(247, 232, 247);
+    color: rgb(56, 141, 216);
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+nav ul {
+    display: flex;
+    gap: 20px;  
+    list-style: none;  
+}
+nav  a{
+    color: rgb(121, 57, 121);
+    text-decoration: none;
+}
+nav a:hover{
+    color: rgb(65, 2, 65);
+}
