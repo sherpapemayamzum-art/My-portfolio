@@ -1,4 +1,4 @@
-body{
+body {
 
     background-color: rgb(121, 57, 121);
 
@@ -10,7 +10,7 @@ body{
 
 }
 
-header{
+header {
 
     background-color: rgb(247, 232, 247);
 
@@ -18,7 +18,7 @@ header{
 
 }
 
-.header-container{
+.header-container {
 
     display: flex;
 
@@ -30,7 +30,7 @@ header{
 
 }
 
-nav ul{
+nav ul {
 
     display: flex;
 
@@ -40,7 +40,7 @@ nav ul{
 
 }
 
-nav a{
+nav a {
 
     color: rgb(121, 57, 121);
 
@@ -48,13 +48,13 @@ nav a{
 
 }
 
-nav a:hover{
+nav a:hover {
 
     color: rgb(65, 2, 65);
 
 }
 
-.search-bar{
+.search-bar {
 
     display: flex;
 
@@ -62,7 +62,7 @@ nav a:hover{
 
 }
 
-.about-container{
+.about-container {
 
     display: flex;
 
@@ -78,7 +78,7 @@ nav a:hover{
 
 }
 
-.profile-pic{
+.profile-pic {
 
     width: 200px;
 
@@ -92,7 +92,7 @@ nav a:hover{
 
 }
 
-.about-text{
+.about-text {
 
     flex: 1;
 
@@ -100,7 +100,7 @@ nav a:hover{
 
 }
 
-#about{
+#about {
 
     background-color: white;
 
@@ -114,23 +114,7 @@ nav a:hover{
 
 }
 
-#skills{
-
-    background-color: white;
-
-    color: black;
-
-    padding: 30px;
-
-    margin: 30px;
-
-    border-radius: 10px;
-
-    box-shadow: 6px 6px 12px black;
-
-}
-
-#Projects{
+#skills {
 
     background-color: white;
 
@@ -146,7 +130,7 @@ nav a:hover{
 
 }
 
-#Education{
+#Projects {
 
     background-color: white;
 
@@ -162,7 +146,7 @@ nav a:hover{
 
 }
 
-#contact{
+#Education {
 
     background-color: white;
 
@@ -178,37 +162,53 @@ nav a:hover{
 
 }
 
-article{
+#contact {
+
+    background-color: white;
+
+    color: black;
+
+    padding: 30px;
+
+    margin: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 6px 6px 12px black;
+
+}
+
+article {
 
     padding: 10px;
 
 }
 
-table{
+table {
 
     width: 50%;
 
 }
 
-input{
+input {
 
     padding: 8px;
 
 }
 
-textarea{
+textarea {
 
     padding: 8px;
 
 }
 
-button{
+button {
 
     padding: 8px;
 
 }
 
-footer{
+footer {
 
     background-color: rgb(247, 232, 247);
 
@@ -222,30 +222,33 @@ footer{
 
 }
 
-.projects-container articale:hover{
+.projects-container articale:hover {
 
     transform: translateY(-5px);
 
 }
 
-@media (max-width: 758px){
-    .header-container{
+@media (max-width: 758px) {
+    .header-container {
         flex-direction: column;
     }
-}
-nav ul{
+
+
+nav ul {
     flex-direction: column;
 }
 
-.about-container{
+.about-container {
     flex-direction: column;
+}
 }
 
-@media (max-width: 769px) and (min-width: 758px){
-.header-container{
-    flex-direction: column;
-}
-.about-container{
-    flex-direction: column;
-}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
 }
