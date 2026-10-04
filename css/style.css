@@ -115,21 +115,15 @@ nav a:hover {
 }
 
 #skills {
-
     background-color: white;
-
     color: black;
-
     padding: 30px;
-
     margin: 30px;
-
     border-radius: 10px;
-
     box-shadow: 6px 6px 12px black;
-
 }
-.skills-container article {
+
+.skills-container .skill-item {
     padding: 10px;
 }
 
@@ -155,10 +149,9 @@ nav a:hover {
     margin-left: 0;
 }
 
-.skills-container article:hover {
+.skills-container .skill-item:hover {
     transform: translateY(-5px);
 }
-
 #Projects {
 
     background-color: white;
@@ -214,12 +207,22 @@ article {
 }
 
 table {
-
     width: 100%;
     border-collapse: collapse;
     table-layout: fixed;
-
 }
+
+/* Draw table borders in CSS instead of the obsolete HTML border attribute */
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+input {
+    padding: 8px;
+}
+
 
 input {
 
