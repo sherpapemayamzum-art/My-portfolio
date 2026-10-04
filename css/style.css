@@ -129,6 +129,35 @@ nav a:hover {
     box-shadow: 6px 6px 12px black;
 
 }
+.skills-container article {
+    padding: 10px;
+}
+
+.skill-section {
+    background-color: rgb(199, 180, 215);
+    color: rgb(1, 6, 10);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px black;
+}
+
+.skill-section dl {
+    margin: 0;
+}
+
+.skill-section dt {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.skill-section dd {
+    margin-left: 0;
+}
+
+.skills-container article:hover {
+    transform: translateY(-5px);
+}
 
 #Projects {
 
@@ -186,7 +215,9 @@ article {
 
 table {
 
-    width: 60%;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
 
 }
 
@@ -199,7 +230,9 @@ input {
 textarea {
 
     padding: 8px;
-
+    width: 300px;
+    height: 120px;
+    resize: none;
 }
 
 button {
@@ -222,7 +255,7 @@ footer {
 
 }
 
-.projects-container articale:hover {
+.projects-container article:hover {
 
     transform: translateY(-5px);
 
@@ -251,4 +284,38 @@ nav ul {
     .about-container {
         flex-direction: column;
     }
+}
+
+.projects-container article:hover{
+    transform: translateY(-5px);
+}
+
+.about-container img:hover {
+    transform: translateY(-5px);
+}
+
+.project-section {
+    background-color: rgb(199, 180, 215);
+    color: rgb(1, 6, 8);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px black;
+}
+
+/* Smooth scrolling between sections */
+html {
+scroll-behavior: smooth;
+}
+
+/* Add a hover effect to buttons */
+button:hover {
+background-color: rgb(65, 2, 65);
+color: white;
+cursor: pointer;
+}
+
+/* Highlight table rows when hovering */
+tbody tr:hover {
+background-color: rgb(230, 215, 240);
 }
