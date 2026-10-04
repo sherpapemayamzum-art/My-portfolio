@@ -1,131 +1,65 @@
 body {
-
     background-color: rgb(121, 57, 121);
-
     color: aliceblue;
-
     font-family: 'Segoe UI', Times New Roman, sans-serif;
-
     line-height: 1.6;
-
 }
-
 header {
-
     background-color: rgb(247, 232, 247);
-
     color: rgb(56, 141, 216);
-
 }
-
 .header-container {
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
     padding: 20px;
-
 }
-
 nav ul {
-
     display: flex;
-
     gap: 20px;
-
     list-style: none;
-
 }
-
 nav a {
-
     color: rgb(121, 57, 121);
-
     text-decoration: none;
-
 }
-
 nav a:hover {
-
     color: rgb(65, 2, 65);
-
 }
-
 .search-bar {
-
     display: flex;
-
     align-items: center;
-
 }
-
-.about-container {
-
-    display: flex;
-
-    flex-direction: row;
-
-    align-items: center;
-
-    justify-content: flex-start;
-
-    gap: 40px;
-
-    padding: 40px;
-
-}
-
-.profile-pic {
-
-    width: 200px;
-
-    height: 200px;
-
-    object-fit: cover;
-
-    border-radius: 50%;
-
-    flex-shrink: 0;
-
-}
-
-.about-text {
-
-    flex: 1;
-
-    text-align: left;
-
-}
-
 #about {
-
     background-color: white;
-
     color: black;
-
     margin: 30px;
-
     border-radius: 10px;
-
     box-shadow: 6px 6px 12px black;
-
 }
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    padding: 40px; }
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;}
+.about-text {
+    flex: 1;
+    text-align: left;}
+.about-container img:hover {
+    transform: translateY(-5px);}
 
 #skills {
-    background-color: white;
-    color: black;
-    padding: 30px;
-    margin: 30px;
-    border-radius: 10px;
-    box-shadow: 6px 6px 12px black;
-}
-
-.skills-container .skill-item {
-    padding: 10px;
-}
+    background-color: white; color: black; padding: 30px;
+    margin: 30px; border-radius: 10px;
+    box-shadow: 6px 6px 12px black;}
 
 .skill-section {
     background-color: rgb(199, 180, 215);
@@ -135,77 +69,48 @@ nav a:hover {
     border-radius: 10px;
     box-shadow: 6px 6px 12px black;
 }
-
-.skill-section dl {
-    margin: 0;
-}
-
-.skill-section dt {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.skill-section dd {
-    margin-left: 0;
-}
-
+.skill-section dl { margin: 0;}
+.skill-section dt {font-weight: bold; margin-bottom: 10px;}
+.skill-section dd {margin-left: 0;}
 .skills-container .skill-item:hover {
     transform: translateY(-5px);
 }
+.skills-container .skill-item 
+{
+    padding: 10px;
+}
+
 #Projects {
-
     background-color: white;
-
     color: black;
-
     padding: 30px;
-
     margin: 30px;
-
     border-radius: 10px;
-
     box-shadow: 6px 6px 12px black;
-
+}
+article {
+    padding: 10px;
+}
+.projects-container article:hover {
+    transform: translateY(-5px);
+}
+.project-section {
+    background-color: rgb(199, 180, 215);
+    color: rgb(1, 6, 8);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px black;
 }
 
 #Education {
-
     background-color: white;
-
     color: black;
-
     padding: 30px;
-
     margin: 30px;
-
     border-radius: 10px;
-
     box-shadow: 6px 6px 12px black;
-
 }
-
-#contact {
-
-    background-color: white;
-
-    color: black;
-
-    padding: 30px;
-
-    margin: 30px;
-
-    border-radius: 10px;
-
-    box-shadow: 6px 6px 12px black;
-
-}
-
-article {
-
-    padding: 10px;
-
-}
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -217,31 +122,37 @@ th,
 td {
     border: 1px solid black;
 }
-
-input {
-    padding: 8px;
+/* Highlight table rows when hovering */
+tbody tr:hover {
+background-color: rgb(230, 215, 240);
 }
 
 
-input {
-
-    padding: 8px;
-
+#contact {
+    background-color: white;
+    color: black;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px black;
 }
-
+input {
+    padding: 8px;
+}
 textarea {
-
     padding: 8px;
     width: 300px;
     height: 120px;
     resize: none;
 }
-
-button {
-
-    padding: 8px;
-
+button {padding: 8px;}
+/* a hover effect to buttons */
+button:hover {
+background-color: rgb(65, 2, 65);
+color: white;
+cursor: pointer;
 }
+
 
 footer {
 
@@ -257,11 +168,7 @@ footer {
 
 }
 
-.projects-container article:hover {
 
-    transform: translateY(-5px);
-
-}
 
 @media (max-width: 758px) {
     .header-container {
@@ -288,36 +195,8 @@ nav ul {
     }
 }
 
-.projects-container article:hover{
-    transform: translateY(-5px);
-}
-
-.about-container img:hover {
-    transform: translateY(-5px);
-}
-
-.project-section {
-    background-color: rgb(199, 180, 215);
-    color: rgb(1, 6, 8);
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 6px 6px 12px black;
-}
 
 /* Smooth scrolling between sections */
 html {
 scroll-behavior: smooth;
-}
-
-/* a hover effect to buttons */
-button:hover {
-background-color: rgb(65, 2, 65);
-color: white;
-cursor: pointer;
-}
-
-/* Highlight table rows when hovering */
-tbody tr:hover {
-background-color: rgb(230, 215, 240);
 }
