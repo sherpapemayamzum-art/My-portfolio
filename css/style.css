@@ -212,7 +212,6 @@ table {
     table-layout: fixed;
 }
 
-/* Draw table borders in CSS instead of the obsolete HTML border attribute */
 table,
 th,
 td {
@@ -311,7 +310,7 @@ html {
 scroll-behavior: smooth;
 }
 
-/* Add a hover effect to buttons */
+/* a hover effect to buttons */
 button:hover {
 background-color: rgb(65, 2, 65);
 color: white;
