@@ -1,7 +1,4 @@
-/**
- * ImageSlider - dependency-free, infinite-loop image slider (ES6 class).
- * Usage: new ImageSlider('#project-slider', { delay: 5000 });
- */
+
 class ImageSlider {
   constructor(selector, options = {}) {
     this.root = document.querySelector(selector);
@@ -24,7 +21,7 @@ class ImageSlider {
     this.init();
   }
 
-  /* Index of the real slide currently shown (0 .. total-1) */
+
   get realIndex() {
     return (((this.index - 1) % this.total) + this.total) % this.total;
   }
@@ -38,8 +35,7 @@ class ImageSlider {
     this.startAutoPlay();
   }
 
-  /* Add a clone of the last slide at the start and of the first at the end,
-     so the track can keep moving in the same direction when it wraps. */
+
   cloneEdges() {
     const firstClone = this.slides[0].cloneNode(true);
     const lastClone = this.slides[this.total - 1].cloneNode(true);
@@ -48,7 +44,6 @@ class ImageSlider {
     this.track.insertBefore(lastClone, this.slides[0]);
   }
 
-  /* One dot per real slide, generated dynamically */
   buildDots() {
     this.slides.forEach((_, i) => {
       const dot = document.createElement('button');
@@ -69,13 +64,12 @@ class ImageSlider {
     this.root.addEventListener('click', () => this.stopAutoPlay());
   }
 
-  /* Slide-width maths: each slide is 100% of the track width,
-     so moving to position n means translateX(-n * 100%). */
+
   setPosition() {
     this.track.style.transform = `translateX(${-this.index * 100}%)`;
   }
 
-  /* Move instantly (no transition) - used for the invisible wrap-around jump */
+
   jump() {
     this.track.classList.add('no-transition');
     this.setPosition();
@@ -107,7 +101,6 @@ class ImageSlider {
     });
   }
 
-  /* After the slide finishes: if we are on a clone, jump to the real slide */
   handleTransitionEnd(e) {
     if (e.target !== this.track || e.propertyName !== 'transform') return;
     if (this.index === this.total + 1) {
